@@ -15,6 +15,12 @@ const crawler = new PlaywrightCrawler({
         enable: false,
       },
     },
+        launchContext: {
+        launchOptions: {
+            channel: 'chromium-headless-shell', 
+            headless: true,
+        }
+    },
 
 });
 
