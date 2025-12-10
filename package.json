@@ -19,7 +19,7 @@
         "start:dev": "tsx src/main.ts",
         "build": "tsc",
         "test": "echo \"Error: oops, the actor has no tests yet, sad!\" && exit 1",
-  "postinstall": "npx playwright install chromium"
+"postinstall": "npx playwright install chromium-headless-shell"
     },
     "author": "It's not you it's me",
     "license": "ISC"
