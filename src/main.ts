@@ -19,6 +19,13 @@ const crawler = new PlaywrightCrawler({
         launchOptions: {
             channel: 'chromium-headless-shell', 
             headless: true,
+                args: [
+                '--disable-gpu',
+                '--disable-dev-shm-usage',
+                '--no-sandbox',
+                '--disable-setuid-sandbox',
+                '--disable-dev-shm-usage',
+            ]
         }
     },
 
